@@ -1,0 +1,395 @@
+.center {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* header */
+
+header {
+  box-shadow: 0px 2px 10px grey;
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+header img {
+  width: 16px;
+}
+
+header .container {
+  background-color: transparent;
+}
+
+header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  display: inline-block;
+}
+header ul li a {
+  display: inline-block;
+  padding: 0.5rem 0.7rem;
+}
+
+.nav .nav-icons {
+  color: grey;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav .nav-icons:hover {
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  color: rgb(39, 39, 39);
+}
+
+.nav .nav-icons:active {
+  scale: 0.9;
+}
+
+.nav #active {
+  color: black;
+  font-weight: bold;
+  /* background-color: red; */
+}
+
+.nav-tools li {
+  /* background-color: aqua; */
+  border-radius: 50%;
+  border: 1px solid rgb(223, 223, 223);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-tools li:hover {
+  background-color: rgb(241, 240, 240);
+}
+
+.nav-tools li:active {
+  scale: 0.9;
+}
+
+/* hero */
+
+.hero {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  /* background-color: red; */
+}
+
+.hero > div {
+  flex: 1;
+  /* background-color: aqua; */
+  height: 100%;
+}
+
+.hero-img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero img {
+  height: 80%;
+  width: auto;
+}
+
+.hero-text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-text h2 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+#food {
+  color: rgb(221, 221, 18);
+}
+#span2 {
+  font-size: 2.3rem;
+}
+.button {
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 1rem;
+  background-color: rgb(221, 221, 18);
+  font-weight: 500;
+  color: black;
+}
+.button:hover {
+  background-color: black;
+  color: rgb(221, 221, 18);
+}
+
+/* about us */
+.container {
+  background-color: rgb(59, 58, 58);
+}
+.about-us {
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+  color: rgb(241, 241, 241);
+}
+.about-us-img {
+  display: flex;
+  justify-content: center;
+}
+.about-us-img img {
+  object-fit: cover;
+}
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: beige;
+}
+#about {
+  color: rgb(240, 240, 13);
+}
+.about-us-text h2 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.about-us-text h3 {
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem 0;
+}
+.about-us-text p {
+  margin: 0 7rem 1rem 0;
+}
+
+/* our menu */
+.pallete-title {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+.pallete-title span {
+  color: rgb(226, 226, 16);
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.items img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.items .tab {
+  border-radius: 1rem;
+  box-shadow: 1px 1px 9px rgb(128, 128, 128, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+.items .tab:hover {
+  box-shadow: 1px 1px 9px rgb(128, 128, 128, 0.5);
+}
+
+.items .tab h3 {
+  font-size: 1.2rem;
+}
+
+.items .tab p {
+  font-size: 0.9rem;
+}
+
+.items .tab a {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: fit-content;
+  margin-top: 1rem;
+  background-color: rgb(226, 226, 16);
+  font-weight: 500;
+  color: black;
+}
+
+.items .tab a:hover {
+  background-color: black;
+  color: rgb(226, 226, 16);
+}
+
+/* gallery */
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery-container:hover .img-container {
+  filter: grayscale(100%);
+}
+
+.gallery-container .img-container:hover {
+  filter: blur(0);
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-container .img-container {
+  height: 320px;
+}
+
+/* .gallery-container .img-container:hover {
+  filter: blur(0);
+  background-color: red;
+  padding: 1rem;
+} */
+
+/* reviews */
+.reviews {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.reviews img {
+  border: 3px solid yellow;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.reviews h3 {
+  color: rgb(218, 218, 28);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.reviews p {
+  width: 70%;
+  font-weight: 500;
+}
+.reviews-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.tab2 {
+  /* border: solid 1px rgb(85, 83, 83); */
+  box-shadow: 5px 5px 10px rgb(128, 128, 128, 0.4);
+  margin: 0.5rem;
+  padding: 1rem;
+  height: fit-content;
+}
+
+/* order */
+.order-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.order-container > div {
+  flex: 1;
+  padding: 1rem;
+}
+
+.order-form {
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-form form {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 70%;
+}
+
+.order-form form > div {
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.order-form form > div > input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.7rem;
+  border: 1px solid rgb(128, 128, 128, 0.5);
+  outline: none;
+}
+.order-form form > div > label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.order-form #submit {
+  width: 100%;
+  background-color: rgb(226, 226, 16);
+  padding: 0.7rem;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.order-form #submit:hover {
+  background-color: black;
+  color: rgb(226, 226, 16);
+}
+
+/* footer */
+.footer-container {
+  background-color: rgb(59, 58, 58);
+  padding: 1rem;
+}
+footer {
+  width: 100%;
+  display: flex;
+  color: beige;
+  /* background-color: aqua; */
+  justify-content: space-between;
+  gap: 2rem;
+}
+.column {
+  /* background-color: red; */
+  flex: 1;
+}
+footer h2 {
+  margin: 0.5rem 0;
+  color: rgb(218, 218, 28);
+}
+footer li {
+  margin: 0.5rem;
+}
+footer img {
+  width: 1.5rem;
+}
+.footer-line {
+  text-align: center;
+  color: beige;
+}
+.footer-line span {
+  color: rgb(218, 218, 28);
+  font-weight: 600;
+  font-size: 1rem;
+}
