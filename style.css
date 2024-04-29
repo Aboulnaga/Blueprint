@@ -1,0 +1,66 @@
+:root {
+  --black-color: rgb(18, 18, 18);
+  --blackRgb: 18, 18, 18;
+  --light-color: rgb(244, 239, 239);
+  --lightRgb: 244, 239, 239;
+  --gren-color: #e1f3e5;
+  --blue-color: #95e2fc;
+  --yellow-color: #f1e4a0;
+  --red-color: #fed7ec;
+  --my-Font: "Cairo", "Segoe UI", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black-color);
+  color: var(--light-color);
+  font-family: var(--my-Font);
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  width: 90%;
+  max-width: 700px;
+  border: 1px solid var(--light-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+header ul a {
+  display: block;
+  background-color: rgba(var(--lightRgb), 0.1);
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+header ul a:hover {
+  background-color: rgba(var(--lightRgb), 0.2);
+}
